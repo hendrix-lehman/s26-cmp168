@@ -46,6 +46,31 @@ class House {
     // Room class implementation
   }
 
+  // setters and getters
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public void setGarage(boolean hasGarage) {
+    this.hasGarage = hasGarage;
+  }
+
+  public void setColor(String color) {
+    this.color = color;
+  }
+
+  public String getAddress() {
+    return this.address;
+  }
+
+  public boolean getGarage() {
+    return this.hasGarage;
+  }
+
+  public String getColor() {
+    return this.color;
+  }
+
   // this is a method
   // methods are use to define the behavior of the object
   // they have a return type, a name, and a body
