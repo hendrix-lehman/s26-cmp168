@@ -68,5 +68,23 @@ class Car {
     System.out.println("Color: " + (color != null ? color : "N/A"));
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    
+    if (obj == null) { // if the object passed-in is null (not in memory), return false
+      return false;
+    }
+    if (this == obj) { // if this object (current instance) is the same
+                       // as the object passed-in (same memory address), return true
+      return true;
+    }
+    if (obj instanceof Car) { // the object passed-in is an instance of Car class
+      Car otherCar = (Car) obj; // cast to a Car object, since we know it's a Car
+      return this.make.equals(otherCar.make) &&
+             this.model.equals(otherCar.model) &&
+             this.year == otherCar.year;
+    }
+    return false; // if the object passed-in is not an instance of Car class, return false
+  }
 }
 

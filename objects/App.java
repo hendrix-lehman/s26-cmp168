@@ -13,7 +13,7 @@ class App {
     System.out.println();
 
     // Create a Car object using the overloaded constructor
-    Car car2 = new Car("Honda", "Civic", 2021, "Red");
+    Car car2 = new Car("Honda", "Civic", 2021, "Blue");
     // Car car2 = new Car();
     car2.displayInfo();
 
@@ -23,6 +23,7 @@ class App {
     System.out.println("String representation of car1: " + car1.toString());
     System.out.println("String representation of car2: " + car2.toString());
 
+    // car1 = car2; // car1 and car2 now reference the same object
     System.out.println("Are car1 and car2 equal? " + car1.equals(car2));
 
     System.out.println("Hash code of car1: " + car1.hashCode());
@@ -32,6 +33,11 @@ class App {
 
     Car car3 = new Car();
     
+    System.out.println("Person secret: " + Person.secret);
+    Person.secret = "NEW SECRET VALUE!";
+    System.out.println("Person secret after change: " + Person.secret);
+
+    System.out.println("random ->" + Math.random()); 
   }
 }
 
