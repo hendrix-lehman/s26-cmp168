@@ -35,6 +35,10 @@ class App {
     app.printPhoneInfo(iPhonePhone);
     app.printPhoneInfo(iPhonePhone2);
     app.printPhoneInfo(classicPhone);
+
+    // NOT THE DESIRED WAY TO USE THIS CLASS
+    Phone phone = new Phone();
+    phone.makeCall("555-555-5555");
   }
 }
 

@@ -1,32 +1,32 @@
 // add package name here if needed
 //
 class Pixel extends SmartPhone {
-  private PixelSpeaker speaker;
+  // private PixelSpeaker speaker;
 
-  class PixelSpeaker extends Speaker {
-    public PixelSpeaker() {
-      super("Pixel Speaker Brand");
-    }
-  }
+  // class PixelSpeaker extends Speaker {
+  //   public PixelSpeaker() {
+  //     super("Pixel Speaker Brand");
+  //   }
+  // }
   
   private String model;
 
   public Pixel() {
     super(); // Call the constructor of the parent class (SmartPhone)
     this.model = "Generic Pixel Model";
-    this.speaker = new PixelSpeaker(); // Initialize the speaker with the PixelSpeaker
+    // this.speaker = new PixelSpeaker(); // Initialize the speaker with the PixelSpeaker
   }
   
   public Pixel(String model) {
     super(); // Call the constructor of the parent class (SmartPhone)
     this.model = model;
-    this.speaker = new PixelSpeaker(); // Initialize the speaker with the PixelSpeaker
+    // this.speaker = new PixelSpeaker(); // Initialize the speaker with the PixelSpeaker
   }
 
   public Pixel(String model, String operatingSystem) {
     super(); // Call the constructor of the parent class (SmartPhone)
     this.model = model;
-    this.speaker = new PixelSpeaker(); // Initialize the speaker with the PixelSpeaker
+    // this.speaker = new PixelSpeaker(); // Initialize the speaker with the PixelSpeaker
     // Override the operating system for this Pixel phone
     // Note: This is not a good design as it breaks encapsulation, but it's just for demonstration
     // In a real design, we would have a better way to set the operating system for different phone types
